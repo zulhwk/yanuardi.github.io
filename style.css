@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* TABLE OF CONTENTS 
+
+1. BODY
+2. NAVIGASI
+
+*/
+
+/* BODY */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #292b2c;
+}
+
+.container {
+    
+}
+
+.container h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    color: transparent;
+    font-size: 50px;
+}
+
+.container h1::before {
+    font-size: 50px;
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    overflow: hidden;
+    border-right: 1px solid #000;
+    animation: type 10s steps(38) infinite;
+    white-space: nowrap;
+}
+@keyframes type {
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0;
+    }
+}
+
+.section img {
+    width: 338px;
+    height: 516px;
+}
+
+.s2 {
+    background: #162447;
+}
+
+.body-section-2 img {
+    margin: 40px;
+}
+
+.body-section-2 {
+    display: flex;
+}
+
+.informasi {
+    margin: 40px;
+}
+
+.informasi h1 {
+    color: white;
+    font-size: 30px;
+    line-height: 20px;
+}
+
+.line {
+    width: 100px;
+    margin-top: 10px;
+    border-bottom: 2px solid white;
+}
+
+.data-pribadi {
+    margin-top: 25px;
+    color: white;
+}
+
+.s1 {
+    background: #e7dfd5;
+    
+}
+
+.body-section-3 h1{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+}
+
+.image-projects {
+    margin-top: 150px;
+}
+
+.image {
+    display: flex;
+    margin-left: 20px;
+    
+}
+
+.image-projects img {
+    width: 305px;
+    height: 215px;
+    margin: 20px;
+}
+
+.image-projects img:hover {
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.image-view {
+    align-items: center;
+    text-align: center;
+}
+
+.skill {
+    margin-top: 20px;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+  }
+  
+  .html {width: 70%; background-color: #4CAF50;}
+  .css {width: 40%; background-color: #2196F3;}
+  .js {width: 20%; background-color: #f44336;}
+  .php {width: 80%; background-color: #808080;}
+  .java {width: 80%; background-color: #ff9a00;}
+  .c {width: 90%; background-color: #f2aaaa;}
+  .react {width: 35%; background-color: #f3c623;}
+
+
+
